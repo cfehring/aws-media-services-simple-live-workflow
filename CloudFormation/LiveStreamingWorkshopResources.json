@@ -45,7 +45,7 @@
         "IAMModuleStack": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://s3-us-west-2.amazonaws.com/rodeolabz-us-west-2/cloudformation/IAMResources.json",
+                "TemplateURL": "https://s3-us-west-2.amazonaws.com/media-services-live-workflow/cloudformation/IAMResources.json",
                 "TimeoutInMinutes": 5
             },
             "Metadata": {
@@ -57,7 +57,7 @@
         "MediaPackageModuleStack": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://s3-us-west-2.amazonaws.com/rodeolabz-us-west-2/cloudformation/MediaPackageResources.json",
+                "TemplateURL": "https://s3-us-west-2.amazonaws.com/media-services-live-workflow/cloudformation/MediaPackageResources.json",
                 "TimeoutInMinutes": 5
             },
             "Metadata": {
@@ -69,7 +69,7 @@
         "MediaLiveModuleStack": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://s3-us-west-2.amazonaws.com/rodeolabz-us-west-2/cloudformation/MediaLiveResources.json",
+                "TemplateURL": "https://s3-us-west-2.amazonaws.com/media-services-live-workflow/cloudformation/MediaLiveResources.json",
                 "TimeoutInMinutes": 5,
                 "Parameters": {
                     "HLSPrimarySource": {
@@ -131,7 +131,7 @@
         "CloudWatchModuleStack": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://s3-us-west-2.amazonaws.com/rodeolabz-us-west-2/cloudformation/CloudWatchResources.json",
+                "TemplateURL": "https://s3-us-west-2.amazonaws.com/media-services-live-workflow/cloudformation/CloudWatchResources.json",
                 "TimeoutInMinutes": 5,
                 "Parameters": {
                     "DashboardName": {

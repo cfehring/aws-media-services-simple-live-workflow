@@ -109,17 +109,7 @@
             "Type": "AWS::Lambda::Function",
             "Properties": {
                 "Code": {
-                    "S3Bucket": {
-                        "Fn::Join": [
-                            "-",
-                            [
-                                "rodeolabz",
-                                {
-                                    "Ref": "AWS::Region"
-                                }
-                            ]
-                        ]
-                    },
+                    "S3Bucket": "media-services-live-workflow",
                     "S3Key": "cloudformation/simpleliveworkflow_resources.zip"
                 },
                 "Environment": {},
@@ -202,17 +192,7 @@
             "Type": "AWS::Lambda::Function",
             "Properties": {
                 "Code": {
-                    "S3Bucket": {
-                        "Fn::Join": [
-                            "-",
-                            [
-                                "rodeolabz",
-                                {
-                                    "Ref": "AWS::Region"
-                                }
-                            ]
-                        ]
-                    },
+                    "S3Bucket": "media-services-live-workflow",
                     "S3Key": "cloudformation/simpleliveworkflow_resources.zip"
                 },
                 "Environment": {},
